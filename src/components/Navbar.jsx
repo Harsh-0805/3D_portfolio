@@ -26,7 +26,7 @@ const Navbar = () => {
           </p>
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">
-          {navLinks.map((Link) => {
+          {navLinks.map((Link) => (
             <li
               key={Link.id}
               className={`${
@@ -37,8 +37,8 @@ const Navbar = () => {
               }}
             >
               <a href={`#${Link.id}`}>{Link.title}</a>
-            </li>;
-          })}
+            </li>
+          ))}
         </ul>
         <div className="sm:hidden flex flex-1 justify-end items-center">
           <img

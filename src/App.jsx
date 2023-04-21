@@ -1,5 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
-
+import { Analytics } from "@vercel/analytics/react";
 import {
   About,
   Contact,
@@ -30,6 +30,7 @@ const App = () => {
           <StarsCanvas />
         </div>
       </div>
+      <Analytics />
     </BrowserRouter>
   );
 };
